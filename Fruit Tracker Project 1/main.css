@@ -1,0 +1,153 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pics/fruitPicker2.jpg");
+  background-position: 30%;
+  color: rgb(255, 255, 255);
+  background-color: #faf441;
+}
+
+header {
+  margin-left: 40%;
+  font-size: 1.2rem;
+}
+
+.intro {
+  margin-left: 22%;
+  margin-right: 20%;
+}
+
+/* This will display the total fruit output */
+
+.fruit-generator {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  font-size: 0.2rem;
+}
+
+#output-title {
+  margin-top: 0.01em;
+  margin-bottom: 0.01em;
+  font-size: 9em;
+  color: #fcf51e;
+  text-transform: uppercase;
+}
+
+#output-num {
+  font-size: 20em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  background-color: rgba(231, 238, 162, 0.412);
+  color: #3c0d92;
+  border-radius: 20px;
+  margin-right: 0%;
+}
+
+#generate-total {
+  height: 3em;
+  width: 16em;
+  background-color: #fcf51e;
+  color: #3c0d92;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+#generate-total:hover {
+  background-color: #3c0d92;
+  color: #faf441;
+}
+
+/* This will show when the button is clicked */
+
+#generate-message {
+  margin-top: 0.2em;
+  font-size: 1.3em;
+  color: #3c0d92;
+  font-weight: 600;
+  background-color: rgba(230, 238, 162, 0.5);
+  margin-left: 32%;
+  margin-right: 32%;
+  padding: 5px 20px;
+  border-radius: 30px;
+  display: none;
+}
+
+/* This is for the input */
+
+.total-fruit-tracker {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  background-color: rgba(230, 238, 162, 0.5);
+  color: #3c0d92;
+  padding-left: 2%;
+  border-radius: 8%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  padding-right: 5%;
+}
+
+#fruit-tracker-title {
+  font-size: 2em;
+}
+
+label {
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+}
+
+#stored-fruit-num-label {
+  background-color: rgba(26, 25, 25, 0.05);
+}
+
+#picked-fruit-num-label {
+  color: rgb(255, 255, 255);
+  background-color: rgba(35, 35, 35, 0.1);
+}
+
+#eaten-fruit-num-label {
+  color: rgb(255, 255, 255);
+  background-color: rgba(13, 13, 13, 0.12);
+}
+
+#stored-fruit-num {
+  border-radius: 0.7em;
+  height: 2.5em;
+  width: 12%;
+}
+
+#picked-fruit-num {
+  border-radius: 0.7em;
+  height: 2.5em;
+  width: 12%;
+}
+
+#eaten-fruit-num {
+  border-radius: 0.7em;
+  height: 2.5em;
+  width: 12%;
+}
+
+/* For smaller screens */
+
+@media all and (max-width: 750px) {
+  header {
+    margin-left: 27%;
+  }
+
+  .intro {
+    margin-right: 15%;
+    margin-left: 20%;
+  }
+
+  #generate-message {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}

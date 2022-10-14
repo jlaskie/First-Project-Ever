@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="./fruitTracker.js" defer></script>
+    <meta name="description" content="A fruit tracker to help you track the amount of fruit you pick in the wild.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Fruit Tracker</h1>
+    </header>
+    <main>
+        <section class="intro">
+             <p><h3>If you have been wild fruit picking and need a way to track the amount of fruit you've picked (and eaten!) then Fruit Tracker is the ideal tool to help manage your fruit!</h3></p>
+             <br>
+        </section>
+        <section class="fruit-generator">
+            <h1 id="output-title">Total Fruit</h1> 
+            <h1 id="output-num">0</h1>
+            <button id="generate-total">FIND OUT MY FRUIT TOTAL</button>
+        </section>
+                <p id="generate-message"></p>
+        <section class="total-fruit-tracker">
+             <h2 id="fruit-tracker-title">How to Use Fruit Tracker</h2>
+                 <section class = "total-fruit-stored">
+                     <label for="stored-fruit-num" id="stored-fruit-num-label">Fruit Stored: </label>
+                     <input type="number" name="fruit-tracker" id="stored-fruit-num" value="0" min="0">
+                     <p><h3>Fruit Stored is the amount of fruit you have at home which has already been stored (leave at 0 if this is your first day picking fruit). </h3></p>
+                     <br>
+                 </section>
+                 <section class="total-fruit-picked">
+                     <label for="picked-fruit-num" id="picked-fruit-num-label">Fruit Picked: </label>
+                     <input type="number" name="fruit-tracker" id="picked-fruit-num" value="0" min="0">
+                     <p><h3>Fruit Picked is the amount of fruit you've picked today (leave at 0 if you haven't picked any fruit). </h3></p>
+                     <br>
+                 </section>
+                 <section class="total-fruit-eaten">
+                     <label for="eaten-fruit-num" id="#eaten-fruit-num-label">Fruit Eaten: </label>
+                     <input type="number" name="fruit-tracker" id="eaten-fruit-num" value="0" min="0">
+                     <p><h3>Fruit Eaten should be used if you ate any of the fruit you've picked or stored. This will be subtracted from your fruit total (leave at 0 if you didn't eat any fruit). </h3></p>
+                 </section>
+        </section>
+    </main>
+</body>
+</html>
